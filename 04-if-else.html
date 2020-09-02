@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de documento</title>
+    <script>
+    //use strict impede que variáveis sejam declaradas
+    //sem o uso de let, var ou const
+    //
+    'use strict'
+
+    // parseInt() *tenta* converter uma string em numero inteiro
+    // se conseguir, o resultado sera o numero inteiro contigo na string
+    // se falhar o resultado sera NaN (Not a Number)
+
+    let num = parseInt(prompt('Informe um número inteiro:'))
+
+    //if é sempre escrito minusculo
+    // é obrigatoriamente seguido de parenteses
+    //a condicao de teste vai dentro dos parenteses
+
+    //isNan pergunta se um valor NAO E um numero válido
+
+      if(isNan(num)) {
+        alert('ERRO: o valor informado NAO é um numero inteiro válido!')
+
+    if(num > 0 ){
+        alert('O numero informado é POSITIVO')
+    } 
+
+    // else if sao duas palavras separadas
+
+    else if (num == 0 ) {
+        alert('O numero informado é ZERO')
+    }
+    //else é sempre escrito minusculo
+    // tem seu proprio bloco de comandos (entre {})
+
+    else {
+        alert('O numero informado é NEGATIVO')
+    }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
+
