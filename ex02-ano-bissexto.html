@@ -31,20 +31,19 @@
              /   divisao 
       */
              
-        let ano = prompt('Informe um ano (AAAA) para saber se é Bissexto:')
+        let ano = parseInt(prompt('Informe um ano (AAAA) maior ou igual a 1582:'))
         
-        if (ano % 400 == 0){
-            alert('O ano é Bissexto')
+        if(isNaN(ano) || ano < 1582) {
+            alert('ERRO: o ano informado é inválido')
         }
 
-        else if (ano % 4==0 && ano % 100!=0 ) {
+        else if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 !==0) {
             alert('O ano é Bissexto')
         }
 
         else {
-            alert('O ano não é Bissexto')
+            alert("O ano informado NAO é bissexto")
         }
-        
     </script>
 </head>
 <body>
