@@ -25,33 +25,42 @@
             Efetue o cálculo apropriado de acordo com o operador informado
             e informe o resultado usando document.write().
         */
-       let n1 = parseInt(prompt('Digite o primeiro numero'))
+
+       //parseFloat() tenta converter strings em numeros de ponto flutuante
+       let n1 = parseFloat(prompt('Digite o primeiro numero'))
        let op = prompt('Insira a operaçao desejada (+, -, *, /)')
-       let n2 = parseInt(prompt('Digite o segundo numero'))
+       let n2 = parseFloat(prompt('Digite o segundo numero'))
        let resultado
+        //teste de validacao dos numeros
 
         if (isNaN(n1 || n2)) {
-            alert('ERRO número inválido')
+            alert('ERRO: pelo menos um número informado é inválido')
         }
         else if (op == '+') {
             resultado = n1 + n2
-            document.write(resultado)
+           
         }
         else if (op == '-') {
             resultado = n1 - n2
-            document.write(resultado)
+            
         }
         else if (op == '*' || op == 'X' || op == 'x') {
             resultado = n1 * n2
-            document.write(resultado)
+           
         }
         else if (op == '/' || op == ':') {
             resultado = n1 / n2
-            document.write(resultado)
+           
         }
         else {
-            alert('ERRO operação inválida') 
+            alert('ERRO: operação inválida') 
         }
+
+       // document.write('O resultado da operaçao: ' + n1 + ' ' + op + ' ' + n2 + ' é igual a ' + resultado + '.')
+
+        //Usando string template (que usa acento graves - backtick)
+        document.write(`O resultado da operaçao: ${n1} ${op} ${n2}
+         é igual a ${resultado}. `)
     </script>
 </head>
 <body>
