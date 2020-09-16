@@ -23,6 +23,43 @@
             FEVEREIRO: 28 dias (29 em anos bissextos)
         */
 
+        let mes = Number(prompt('Digite o mês para saber qual tem 31 dias (1 a 12)'))
+        let dia   
+        if(isNaN(mes)){
+            alert('ERRO: Informação inválida')
+        }
+         
+        else{
+            switch(mes){
+                case 1: 
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    dia='Este mês possui 31 dias'
+                        break
+
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    dia='Este mês possui 30 dias'
+                        break
+
+            case 2:
+                dia='Este mês possui 29 dias'
+                break
+
+        }
+         document.write(dia)
+        
+    }
+    
+           
+
+
     </script>
 </head>
 <body>
