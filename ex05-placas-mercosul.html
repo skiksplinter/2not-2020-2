@@ -37,48 +37,48 @@
             de decisão switch..case, informe ao usuário a letra correspondente
             ao dígito informado.
         */
-        let digito = Number(prompt('Digite um dígito de 0 a 9'))
-        let letra  
-    if(isNaN(digito)){
-         alert('ERRO: Informação inválida')
-    }
-    else{
-        switch(digito){
+        let digito, letra
+        do {
+            digito = parseInt(prompt('Informe o segundo dígito da placa tradicional (0 a 9):'))
+
+        } while(isNaN(digito) ||  digito < 0 || digito > 9)
+
+        switch(digito) {
             case 0:
-                letra='A'
+                letra = 'A'
                 break
             case 1:
-                letra= 'B'
+                letra = 'B'
                 break
             case 2:
-                letra= 'C'
+                letra = 'C'
                 break
             case 3:
-                letra= 'D'
+                letra = 'D'
                 break
             case 4:
-                letra= 'E'
+                letra = 'E'
                 break
             case 5:
-                letra= 'F'
+                letra = 'F'
                 break
             case 6:
-                letra= 'G'
+                letra = 'G'
                 break
             case 7:
-                letra= 'H'
+                letra = 'H'
                 break
             case 8:
-                letra= 'I'
+                letra = 'I'
                 break
             case 9:
-                letra= 'J'
-                break
-             
-        }
-        document.write(`O segundo número da placa será substituído pela letra ${letra}.`)
-    }
-           
+                letra = 'J'
+    
+  }
+      
+        //usando string template delimitado por acentos grave(`)
+        alert(`A letra correspondente ao dígito ${digito} é ${letra}.`)
+       
 
     </script>
 </head>
