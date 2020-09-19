@@ -21,6 +21,24 @@
             os dois valores informados (inclusive).            
 
         */
+       let num1, num2
+       do{
+           do{
+               num1 = parseInt(prompt('Informe o primeiro numero:'))
+           } while(isNaN(num1))
+
+            do{
+               num2 = parseInt(prompt('Informe o segundo numero:'))
+           } while(isNaN(num2))
+
+       } while(num1 >= num2)
+
+       let soma = 0
+       for(let i= num1; i <= num2; i++) {
+           soma += i
+
+       }
+       document.write(`A soma dos numeros entre ${num1} e ${num2} é ${soma}`)
 
     </script>
 </head>
