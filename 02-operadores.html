@@ -1,139 +1,71 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modelo de documento HTML</title>
     <script>
-    //use strict impede que variáveis sejam declaradas
-    //sem o uso de let, var ou const
-    //
-    'use strict'
-    //Declaraçao de variaveis em JS
-    //Declarando tres variaveis separadamente 
-    //Variáveis declaradas sem receber valor têm o valor inicial undefined (indefinido)
-    /* let a
-    let b
-    let c 
-
-    //Declarando tres variaveis de uma só vez
-    let x, y, z
-
-    let v1 = "Teste" //tipo string
-    let v2 = 2.75   //tipo number
-    let v3 = true   //tipo boolean
-    let v4 = 70     //tipo string
-    let v5          //tipo undefined
-    let v6 = '356'  //tipo string
-
-
-    // Mudando o valor de v2
-    v2 = 'Batata'    //tipo string (ou seja, variavel n tem o tipo
-                        // o tipo é o valor que esta dentro dela)
-
-    //Descobrindo o tipo das variaveis
-
-        // alert(typeof v2)
-        // Declarando varias variaveis com valor e sem valor
-
-        let q1 = 5, q2 = 7, q3 = '4', res 
-
-        //operadores aritmeticos
-        res = q1 - q2   //subtracao de numeros
-        res = q1 - q3   //subtracao com conversao de string para numero
-        res = q1 - v2   //falha na conversao de v2 para numero pois
-                        //dentro da string nao há numero valido
-                        //o resultado na opecao é NaN (Not a Number) 
-
-         //MULTIPLICACAO               
-        res = q1 * q2   //35
-        res = q1 * q3   //20, com conversao de q3
-        res = q1 * v2   //NaN
-
-        //DIVISAO               
-        res = q1 / q2   //0.7142
-        res = q1 / q3   //1.25, com conversao de q3
-        res = q1 / v2   //NaN 
-
-        //ADICAO               
-        res = q1 + q2   //12
-        res = q1 + q3   //54 ouve concatenacao
-                        //com o sinal de +, havendo pelo menos uma string
-                        //entre os termos, havera a conversao para string
-                        //dos demais termos e todos serao concatenados
-
-        res = q1 + v2   //5Batata, houve concatenacao.
-        
-        //Forcando a soma de um numero com uma string
-        //que contem um valor numerico valido
-
-        //Forma 1: usando Number()
-        res = q1 + Number(q3)
-        //Forma 2: usando parseInt()
-        res = q1 + parseInt(q3)
-
-        //potenciacao               
-        res = q1 ** q2   //78125
-        res = q1 ** q3   //625, com conversao de q3
-        res = q1 ** v2   //NaN 
-
-        //operador de modulo (resto da divisao)               
-        res = 5 % 2    //1   (resto da divisao)
-        res = 11 % 3   //2  (resto da divisao)
-        res = 8 % 2   //0 
-                        
-       operadores relacionais
-
-        > Maior que                
-        > Menor que
-        >= Maior ou igual que
-        >= Mmenor ou igual que
-
-        */
-
-       let a = 3, b = 6, c='6'  //operador de atribuicao
-
-       //operador de igualdade
-       //testando a igualdade de duas variaveis
-       //para testar a igualdade, usamos DOIS sinais de igual
-        //alert(a == b) //false
-        //alert(b == c) //true
-
-        //operador de igualdade estrita ou "exatamente igual"
-       // alert(b === c) //false
-
-       //operador de diferença
-        //alert(a != b) //true
-        //alert(b != c) 
-
-        //operador de diferenca estrita "exatamente diferente"
-        //alert(b !==c)
-
+        // 'use strict' impede que variáveis sejam declaradas
+        // sem o uso de let, var ou const
+        // Inicializar variáveis diretamente é má prática de
+        // programação
+        'use strict'
 
         /*
-            OPERADORES LOGICOS
-            &&   E    lógico  (and) 
-            ||   OU   lógico  (or)
-            !    NAO  lógico  (not)
-        
-            alert (5 > 4 && 2 > 1)
-        
-        CONVERSAO DE NUMEROS PARA BOOLEANO
-        0 -> será convertido para false
-        Qualquer valor nao zero -> convertido pra true
-
-
-        O Operador not (!) tem uma precedencia muita alta
-        (é interpretado primeiro) e, por isso, quase sempre é usado com parenteses.
-
-        alert(!(5 < 4 && 2 > 1))
-
-        PRECEDENCIA DOS OPERADORES LOGICOS
-        1 = !
-        2 = &&
-        3 = ||
-        
+            OPERADORES RELACIONAIS
+            >   Maior que
+            <   Menor que
+            >=  Maior ou igual que
+            <=  Menor ou igual que
         */
+                
+        let a = 3, b = 6, c = '6' // Operador de atribuição
+
+        // Operador de igualdade
+        // Testando a igualdade de duas variáveis
+        // Para testar a igualdade, usamos DOIS sinais de igual
+        //alert(a == b)     // false
+        //alert(b == c)       // true
+
+        // Operador de igualdade estrita ou
+        // "exatamente igual"
+        //alert(b === c)      // false
+
+        // Operador de diferença
+        //alert(a != b)   // true
+        //alert(b != c)
+
+        // Operador de diferença estrita ("exatamente diferente")
+        //alert(b !== c)
+
+        /*
+            OPERADORES LÓGICOS
+            &&  E lógico (and)
+            ||  OU lógico (or)
+            !   NÃO lógico (not)
+        */
+       //alert(5 > 4 && 2 > 1)      // true
+       //alert(5 < 4 && 2 > 1)
+
+       //alert(5 > 4 || 2 > 1)        // true
+       //alert(5 < 4 || 2 > 1)        // true
+
+       /*
+            CONVERSÃO DE NÚMEROS PARA BOOLEANO
+            0 -> será convertido para false
+            Qualquer valor não-zero -> convertido para true
+       */
+       
+       // O operador not (!) tem uma precedência muita alta
+       // (é interpretado primeiro) e, por isso, quase sempre
+       // é usado com parênteses
+       alert(!(5 < 4 && 2 > 1))
+
+       // PRECEDÊNCIA DOS OPERADORES LÓGICOS
+       // 1º !
+       // 2º &&
+       // 3º ||   
+        
     </script>
 </head>
 <body>
