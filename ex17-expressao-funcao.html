@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,19 +18,33 @@
             -1, se o primeiro número for maior que o segundo
             0, se ambos os números forem iguais entre si
             1, se se o segundo número for maior que o primeiro
-
             Tente chamar a expressão de função ANTES e DEPOIS de
             declará-la. Em que situação a chamada funciona?
         */
 
-    </script>
+       //alert(comparar(5, 1))
 
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Estruturas de Dados-A-M-ANALISE E DESENV. DE SISTEMAS-109-20202 Members</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
-<mso:SharedWithUsers msdt:dt="string">85;#Estruturas de Dados-A-M-ANALISE E DESENV. DE SISTEMAS-109-20202 Members</mso:SharedWithUsers>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
+       //function comparar(a, b) {
+       const comparar = function(a, b) { // Função
+            // Quando um if, um while, um for tiver apenas
+            // uma linha de código, as {} podem ser omitidas
+            if(a > b) return -1
+            if(a == b) return 0
+            else return 1            
+       }
+
+       alert(comparar(5, 1))
+
+       // TIPOS DE DADOS NO JS
+       // 1) Number
+       // 2) Boolean
+       // 3) String
+       // 4) Function
+       // 5) Object (inclui vetores e objetos em sentido estrito)
+       // 6) Undefined
+       // 7) BigInt (inteiros muito grandes, a partir do ES2019)
+
+    </script>
 </head>
 
 <body>
